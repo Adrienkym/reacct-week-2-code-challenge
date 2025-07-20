@@ -1,0 +1,30 @@
+{
+  "goals": [
+    {
+      "id": "1",
+      "name": "Travel Fund - mexico",
+      "targetAmount": 5000,
+      "savedAmount": 3644,
+      "category": "Travel",
+      "deadline": "2025-07-22",
+      "createdAt": "2024-01-15",
+      "target": "4300"
+    },
+    {
+      "id": "2",
+      "name": "Emergency Fund",
+      "targetAmount": 10000,
+      "savedAmount": 7500,
+      "category": "Emergency",
+      "deadline": "2026-06-30",
+      "createdAt": "2025-07-20"
+    },
+    {
+      "id": "3",
+      "name": "Vacation",
+      "target": 3000,
+      "saved": 500,
+      "savedAmount": null
+    }
+  ]
+}
