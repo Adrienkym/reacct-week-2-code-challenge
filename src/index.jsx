@@ -9,7 +9,7 @@ function App() {
   const [editingGoal, setEditingGoal] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/goals")
+    fetch("http://localhost:3001/goals")
       .then((res) => res.json())
       .then(setGoals);
   }, []);

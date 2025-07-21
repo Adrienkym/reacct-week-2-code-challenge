@@ -25,14 +25,6 @@
       "target": 3000,
       "saved": 500,
       "savedAmount": null
-    },
-    {
-      "id": "8fd6",
-      "name": "local",
-      "target": "1600",
-      "category": "stay",
-      "deadline": "2025-07-21",
-      "savedAmount": 0
     }
   ]
 }
