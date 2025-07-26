@@ -3,13 +3,14 @@ import GoalForm from "./components/goalform"
 import DepositForm from "./components/depositform"
 import Overview from "./components/overview";
 
+const API_URL = "https://jsonserver-1-admg.onrender.com"; 
 
 function App() {
   const [goals, setGoals] = useState([]);
   const [editingGoal, setEditingGoal] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/goals")
+    fetch(`${API_URL}/goals`)
       .then((res) => res.json())
       .then(setGoals);
   }, []);
@@ -30,7 +31,7 @@ function App() {
   }
 
   function handleDeleteGoal(id) {
-    fetch(`http://localhost:3000/goals/${id}`, {
+    fetch(`${API_URL}/goals/${id}`, {
       method: "DELETE",
     })
       .then(() => {
@@ -38,7 +39,7 @@ function App() {
       });
   }
   function handleDeposit(goalId, newSavedAmount) {
-  fetch(`http://localhost:3000/goals/${goalId}`, {
+  fetch(`${API_BASE_URL}/goals/${goalId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

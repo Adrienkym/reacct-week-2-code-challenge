@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const API_URL = "https://jsonserver-1-admg.onrender.com";
+
 function GoalForm({ onAddGoal, initialData, isEditing }) {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,8 +26,8 @@ function GoalForm({ onAddGoal, initialData, isEditing }) {
     e.preventDefault();
 
     const url = isEditing
-      ? `http://localhost:3000/goals/${formData.id}`
-      : "http://localhost:3000/goals";
+      ? `${API_URL}/goals/${formData.id}`
+      : `${API_URL}/goals`;
 
     const method = isEditing ? "PATCH" : "POST";
 
