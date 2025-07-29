@@ -7,7 +7,7 @@ function DepositForm({ goals, onDeposit }) {
 
   function handleSubmit(e) { 
     e.preventDefault();
-    const goal = goals.find((g) => g.id === parseInt(selectedGoalId)); // find the goal by ID
+    const goal = goals.find((g) => g.id === selectedGoalId); // find the goal by ID
     if (!goal || amount <= 0) return; // validate the goal and amount
 
     const updatedAmount = goal.savedAmount + parseFloat(amount); //parsefloat to ensure it's a number
