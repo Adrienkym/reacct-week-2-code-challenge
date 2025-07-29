@@ -38,7 +38,7 @@ function App() {
       });
   }
   function handleDeposit(goalId, newSavedAmount) {
-  fetch(`${API_BASE_URL}/goals/${goalId}`, {
+  fetch(`${API_URL}/goals/${goalId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

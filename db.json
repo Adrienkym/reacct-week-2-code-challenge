@@ -7,8 +7,7 @@
       "savedAmount": 3644,
       "category": "Travel",
       "deadline": "2025-07-22",
-      "createdAt": "2024-01-15",
-      "target": "4300"
+      "createdAt": "2024-01-15"
     },
     {
       "id": "2",
@@ -22,9 +21,8 @@
     {
       "id": "3",
       "name": "Vacation",
-      "target": 3000,
-      "saved": 500,
-      "savedAmount": null
+      "targetAmount": 3000,
+      "savedAmount": 500
     }
   ]
 }
