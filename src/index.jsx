@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import GoalForm from "./components/goalform"
-import DepositForm from "./components/depositform"
-import Overview from "./components/overview";
-
+import GoalForm from "./components/GoalForm"
+import DepositForm from "./components/DepositForm"
+import Overview from "./components/Overview";
 const API_URL = "https://jsonserver-1-admg.onrender.com"; 
 
 function App() {
